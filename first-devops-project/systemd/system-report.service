@@ -1,0 +1,8 @@
+[Unit]
+Description=Collect a local system status report
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/system-report.sh
+StandardOutput=journal
+StandardError=journal

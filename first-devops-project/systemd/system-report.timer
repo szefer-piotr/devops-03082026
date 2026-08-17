@@ -1,0 +1,11 @@
+[Unit]
+Description=Run system-report twice daily at 06:00 and 18:00
+
+[Timer]
+OnCalendar=*-*-* 06:00:00
+OnCalendar=*-*-* 18:00:00
+Persistent=true
+Unit=system-report.service
+
+[Install]
+WantedBy=timers.target
